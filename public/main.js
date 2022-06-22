@@ -21,7 +21,7 @@ const fetchWeather = async (city) => {
 
   const displayData = {
     city: data.name,
-    temp: kelvinToFahrenheit(data.main.temp),
+    temp: kelvinToCelsius(data.main.temp),
   }
 
   addWeatherToDOM(displayData)
@@ -37,7 +37,7 @@ const addWeatherToDOM = (data) => {
 }
 
 // Converter Kelvin para Celsius
-const kelvinToFahrenheit = (temp) => {
+const kelvinToCelsius = (temp) => {
   return Math.ceil((temp - 273.15) * 9)
 }
 

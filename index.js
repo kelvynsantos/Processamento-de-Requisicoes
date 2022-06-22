@@ -8,7 +8,7 @@ const app = express()
 
 const limite = rangeLimite({
     windowMs: 10 * 60 * 1000, // 10 minutos
-    max: 100,
+    max: 5,
 })
 app.use(limite)
 app.set('proxy confiável',1)
