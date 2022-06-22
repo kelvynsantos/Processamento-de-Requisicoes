@@ -38,7 +38,7 @@ const addWeatherToDOM = (data) => {
 
 // Converter Kelvin para Celsius
 const kelvinToCelsius = (temp) => {
-  return Math.ceil((temp - 273.15) * 9)
+  return Math.ceil((temp - 273.15))
 }
 
 // Event listener for form submission
